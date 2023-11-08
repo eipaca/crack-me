@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>crack me</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Mot de passe ?</h1>
+  <form>
+    <input type="password" id ="saisie">
+    <input type="button" value="Valider" onclick="mdp()">
+  </form>
+  <img src="media/closed.jpg">
+
+  <script>
+  function mdp() {
+    if (document.getElementById("saisie").value == "123456") {
+      window.location.replace("home.html"); 
+    } else {
+      document.getElementById("saisie").value = ""; 
+    }
+  }
+  </script>
+</body>    
+</html>
